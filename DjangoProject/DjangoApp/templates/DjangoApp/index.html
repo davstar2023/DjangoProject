@@ -1,15 +1,90 @@
-{% extends "DjangoApp/layout.html" %}
-
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>{{ title }}</title>
-    {% load static %} <!-- Instruct Django to load static files -->
-    <link rel="stylesheet" type="text/css" href="{% static 'site.css' %}" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Love the Music LTD</title>
 </head>
 <body>
-    {% block content %}
-    <span class="message">{{ message }}</span>{{ content }}
-    {% endblock %}
-    <div><a href="about">About</a></div>
+    <header class="topbar">
+        <div class="social-icons">
+            <a href="Twitter" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="YouTube" class="social-icon"><i class="fab fa-youtube"></i></a>
+            <a href="Facebook" class="social-icon"><i class="fab fa-facebook"></i></a>
+            <a href="Instagram" class="social-icon"><i class="fab fa-instagram"></i></a>
+        </div>
+        <h1>Love The Music LTD</h1>
+        <div class="logo">
+            <img src="drum.jpg" alt="Love the Music LTD Logo">
+        </div>
+    </header>
+    <main class="content">
+        <h1>Welcome to Love the Music LTD</h1>
+        <p>Connecting people through the power of music and musical performances.</p>
+        <section class="feature-section">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="highlight-box">
+                        <h2>Experience Music Like Never Before</h2>
+                        <hr>
+                        <p>
+                            Love the Music LTD is your ultimate destination for exploring and enjoying the world of
+                            music.
+                            Whether you're a casual listener or a dedicated audiophile, our platform offers a wide range
+                            of
+                            music
+                            genres,
+                            curated playlists, and personalized recommendations to satisfy your musical cravings.
+                        </p>
+                        <p><a class="btn btn-default" href="about.html">Learn more &raquo;</a></p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="highlight-box">
+                        <h2>Join Our Community</h2>
+                        <hr>
+                        <p>
+                            Become a member of Love the Music LTD and unlock a world of musical possibilities. Connect
+                            with
+                            fellow music
+                            enthusiasts,
+                            create and share your playlists, and stay updated with the latest releases from your
+                            favorite
+                            artists.
+                        </p>
+                        <p><a class="btn btn-default" href="login.html">Sign Up Now &raquo;</a></p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="highlight-box">
+                        <h2>Contact Us</h2>
+                        <hr>
+                        <p>
+                            Have questions or feedback? Contact us, and we'll be happy to assist you.
+                        </p>
+                        <p><a class="btn btn-default" href="contact.html">Get in Touch &raquo;</a></p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="highlight-box">
+                        <h2>Administrator Login</h2>
+                        <hr>
+                        <p>
+                            This is a seperate page for administrators. Login to gain access to special features
+                        </p>
+                        <p><a class="btn btn-default" href="admin_login.html">Login &raquo;</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2023 Love the Music LTD. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>

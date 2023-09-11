@@ -1,15 +1,38 @@
-{% extends "DjangoApp/layout.html" %}
+<!DOCTYPE html>
+<html lang="en">
 
-<html>
 <head>
-    <title>{{ title }}</title>
-    {% load static %}
-    <link rel="stylesheet" type="text/css" href="{% static 'site.css' %}" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="about.css">
+    <title>About Love The Music Ltd</title>
 </head>
+
 <body>
-    <div><a href="home">Home</a></div>
-    {% block content %}
-    {{ content }}
-    {% endblock %}
+    <header class="topbar">
+        <a href="index.html">Home</a>
+    </header>
+    <main class="content">
+        <h1>About Love The Music Ltd</h1>
+        <p>
+            Love The Music Ltd is a music performance arts club consisting of like-minded individuals who gather monthly
+            to
+            showcase, develop, and celebrate their artistic talents. The club has been active since 2010, holding
+            monthly
+            meetings for performances and musical piece evaluations.
+        </p>
+
+        <p>
+            Club members are encouraged to present musical performances lasting up to 15 minutes. However, all
+            performances must
+            undergo a review process by the committee and be scheduled for a specific date.
+        </p>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2023 Love the Music LTD. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
+
 </html>

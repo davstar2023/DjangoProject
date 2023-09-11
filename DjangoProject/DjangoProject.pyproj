@@ -47,10 +47,22 @@
     <Compile Include="DjangoProject\wsgi.py" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="DjangoApp\static\about.css" />
+    <Content Include="DjangoApp\static\admin_validation.js" />
+    <Content Include="DjangoApp\static\contact.css" />
+    <Content Include="DjangoApp\static\login-style.css" />
+    <Content Include="DjangoApp\static\submission.css" />
+    <Content Include="DjangoApp\static\users.css" />
+    <Content Include="DjangoApp\static\users_validation.js" />
     <Content Include="DjangoApp\templates\DjangoApp\about.html" />
-    <Content Include="DjangoApp\templates\DjangoApp\layout.html" />
-    <Content Include="DjangoApp\static\site.css" />
+    <Content Include="DjangoApp\static\styles.css" />
+    <Content Include="DjangoApp\templates\DjangoApp\admin.html" />
+    <Content Include="DjangoApp\templates\DjangoApp\admin_login.html" />
+    <Content Include="DjangoApp\templates\DjangoApp\contact.html" />
     <Content Include="DjangoApp\templates\DjangoApp\index.html" />
+    <Content Include="DjangoApp\templates\DjangoApp\login.html" />
+    <Content Include="DjangoApp\templates\DjangoApp\submission.html" />
+    <Content Include="DjangoApp\templates\DjangoApp\users.html" />
     <Content Include="requirements.txt" />
   </ItemGroup>
   <ItemGroup>

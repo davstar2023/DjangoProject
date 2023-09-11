@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="submission.css">
+    <title>Submit Performance</title>
+</head>
+<body>
+    <div class="row">
+        <div class="col-md-8">
+            <section id="performanceForm">
+                <h1>Submit Performance</h1>
+                <h4>Enter your performance details</h4>
+                <hr />
+                <div class="form-group">
+                    <label for="performerName" class="col-md-2 control-label">Name</label>
+                    <div class="col-md-10">
+                        <input type="text" id="performerName" name="performerName" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="performanceTitle" class="col-md-2 control-label">Performance Title</label>
+                    <div class="col-md-10">
+                        <input type="text" id="performanceTitle" name="performanceTitle" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="performanceDescription" class="col-md-2 control-label">Description</label>
+                    <div class="col-md-10">
+                        <textarea id="performanceDescription" name="performanceDescription" required></textarea>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="audioFile" class="col-md-2 control-label">Audio File</label>
+                    <div class="col-md-10">
+                        <input type="file" id="audioFile" name="audioFile" accept=".mp3, .wav, .ogg" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10">
+                        <input type="submit" value="Submit Performance" class="btn btn-default" />
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+</html>

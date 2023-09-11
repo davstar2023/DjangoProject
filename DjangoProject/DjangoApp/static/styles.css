@@ -1,0 +1,116 @@
+/* Reset some default styles */
+body {
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-emphasis-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.logo img {
+    width: 100px;
+    /* Adjust the width as needed */
+    height: auto;
+    background-color: rgb(84, 84, 84);
+    /* Automatically adjust the height to maintain aspect ratio */
+}
+
+/* Add CSS styles for the highlight boxes */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-md-6 {
+    flex-basis: calc(50% - 20px);
+    /* 50% width with spacing */
+    margin-right: 20px;
+    /* Adjust the margin as needed */
+}
+
+    /* Remove the margin-right for the last box in each row */
+    .col-md-6:nth-child(2n) {
+        margin-right: 0;
+    }
+
+/* Style the topbar/header */
+/* Add some spacing between the social icons and the company name */
+.topbar {
+    background-color: rgb(84, 84, 84);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.social-icons {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    /* Adjust this margin as needed */
+}
+
+.social-icon {
+    font-size: 24px;
+    margin-right: 10px;
+    /* Adjust this margin as needed */
+    color: #333;
+    /* Default color */
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+    /* Transition effect for color and text-shadow */
+}
+
+    /* Glow effect on hover */
+    .social-icon:hover {
+        color: #00bfff;
+        /* Change the color to the desired glow color */
+        text-shadow: 0 0 10px rgba(0, 191, 255, 0.8);
+        /* Add a subtle text shadow for the glow effect */
+    }
+
+/* Style the main content */
+.content {
+    padding: 20px;
+}
+
+/* Style the highlight boxes */
+.highlight-box {
+    border: 2px solid black;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: transparent;
+    /* Initial background color */
+    transition: background-color 0.3s ease;
+    /* Smooth transition on hover */
+}
+
+    .highlight-box h2 {
+        color: #333;
+    }
+
+    .highlight-box p {
+        color: #555;
+    }
+
+    .highlight-box a {
+        color: #333;
+        text-decoration: none;
+    }
+
+    .highlight-box:hover {
+        background-color: #f0f0f0;
+        /* Lighter background color on hover */
+    }
+
+footer {
+    background-color: #555;
+}
