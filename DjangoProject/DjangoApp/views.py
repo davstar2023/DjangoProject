@@ -19,3 +19,14 @@ def about(request):
         request,
         "DjangoApp/about.html",
     )
+
+def contact(request):
+    return render(
+        request, "DjangoApp/contact.html",
+    )
+
+def login(request):
+    return render (
+        request, "DjangoApp/login.html"
+    )
+

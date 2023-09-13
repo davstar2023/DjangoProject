@@ -33,5 +33,11 @@ urlpatterns = [
     re_path(r'^$', DjangoApp.views.index, name='index'),
     re_path(r'^home$', DjangoApp.views.index, name='home'),
     re_path(r'^about$', DjangoApp.views.about, name='about'),
+    re_path(r'^about$', DjangoApp.views.about, name='about'),
+    re_path(r'^about$', DjangoApp.views.about, name='about'),
+    re_path(r'^about$', DjangoApp.views.about, name='about'),
+    re_path(r'^about$', DjangoApp.views.about, name='about'),
+    re_path(r'^about$', DjangoApp.views.about, name='about'),
+    re_path(r'^about$', DjangoApp.views.about, name='about'),
 ]
 
